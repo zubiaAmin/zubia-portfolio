@@ -58,13 +58,4 @@ nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.cla
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // ===== Contact form (static-friendly: opens mail client) =====
-// const form = document.getElementById("contactForm");
-// const note = document.getElementById("formNote");
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const data = new FormData(form);
-//   const subject = encodeURIComponent(`New project inquiry from ${data.get("name")}`);
-//   const body = encodeURIComponent(`${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`);
-//   window.location.href = `mailto:hello@zubiaqayani.dev?subject=${subject}&body=${body}`;
-//   note.textContent = "Opening your email app…";
-// });
+
