@@ -92,3 +92,5 @@ form.addEventListener("submit", async function (e) {
   }
 });
 
+console.log("SCRIPT LOADED");
+
