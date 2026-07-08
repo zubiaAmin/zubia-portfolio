@@ -59,3 +59,36 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // ===== Contact form (static-friendly: opens mail client) =====
 
+const form = document.getElementById("contactForm");
+const note = document.getElementById("formNote");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  note.textContent = "Sending...";
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      note.style.color = "#4CAF50";
+      note.textContent = "✅ Message sent successfully! I'll get back to you soon.";
+      form.reset();
+    } else {
+      note.style.color = "#ff4d4d";
+      note.textContent = "❌ Something went wrong. Please try again.";
+    }
+  } catch (error) {
+    note.style.color = "#ff4d4d";
+    note.textContent = "❌ Something went wrong. Please try again.";
+  }
+});
+
