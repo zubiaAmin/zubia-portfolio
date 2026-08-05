@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Zubia Kayani — Web Developer for Growing Service Businesses</title>
+<title>Zubia Qayani — Web Developer for Growing Service Businesses</title>
 <meta name="description" content="Freelance web developer building fast, conversion-focused websites on WordPress, Shopify, Wix, Webflow and Squarespace for spas, clinics, law firms and local businesses across the US, Australia and Germany." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2312141C%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22%23FFB020%22 font-family=%22monospace%22 text-anchor=%22middle%22>Z</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,13 +18,13 @@
   <div class="wrap header-inner">
     <a href="#top" class="brand">
       <span class="brand-mark">&lt;Z/&gt;</span>
-      <span class="brand-name">Zubia Kayani</span>
+      <span class="brand-name">Zubia Qayani</span>
     </a>
     <nav class="nav" id="nav">
       <a href="#work">Work</a>
       <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
-      <a href="#process">Process</a>
       <a href="#contact" class="nav-cta">Start a project</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -44,12 +44,12 @@
         <p class="hero-sub">I'm Zubia — a freelance developer with 8+ years building fast, good-looking sites on WordPress, Shopify, Wix, Webflow and Squarespace for spas, clinics, salons, law firms and local businesses across the US, Australia and Germany.</p>
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">See the work</a>
-          <a href="#contact" class="btn btn-ghost">Get a quote</a>
+          <a href="#pricing" class="btn btn-ghost">View pricing</a>
         </div>
         <div class="hero-stats">
-          <div><strong>20+</strong><span>live projects shipped</span></div>
-          <div><strong>8+</strong><span>years building on the web</span></div>
-          <div><strong>5</strong><span>platforms mastered</span></div>
+          <div><strong><span class="count" data-target="20">0</span>+</strong><span>live projects shipped</span></div>
+          <div><strong><span class="count" data-target="8">0</span>+</strong><span>years building on the web</span></div>
+          <div><strong><span class="count" data-target="5">0</span></strong><span>platforms mastered</span></div>
         </div>
       </div>
 
@@ -63,58 +63,84 @@
             <img id="heroShot" src="images/apricity-pools.jpg" alt="Live client website preview" />
           </div>
         </div>
-        <div class="floating-tag tag-1">deployed ✓</div>
-        <div class="floating-tag tag-2">mobile-ready ✓</div>
+        <div class="floating-tag tag-1">deployed &#10003;</div>
+        <div class="floating-tag tag-2">mobile-ready &#10003;</div>
       </div>
     </div>
   </section>
 
-  <!-- LOGO / PLATFORM STRIP -->
-  <section class="platform-strip">
-    <div class="wrap">
-      <p class="strip-label">Built on</p>
-      <div class="platform-list">
-        <span>WordPress</span><span>Shopify</span><span>Wix</span><span>Webflow</span><span>Squarespace</span>
-      </div>
+  <!-- PLATFORMS -->
+  <section class="platforms">
+    <p class="strip-label">// platforms.run()  —  build tools</p>
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack"></div>
     </div>
   </section>
 
   <!-- WORK -->
   <section class="work" id="work">
     <div class="wrap">
-      <p class="eyebrow">// selected-work.render(all)</p>
-      <h2>Real sites, for real clients</h2>
-      <p class="section-sub">Every screenshot below is a live project — hover a window to scroll through the actual page.</p>
+      <p class="eyebrow reveal">// selected-work.render(all)</p>
+      <h2 class="reveal">Real sites, for real clients</h2>
+      <p class="section-sub reveal">Every screenshot below is a live project — hover a window to scroll through the actual page.</p>
 
-      <div class="work-grid" id="workGrid"></div>
+      <div class="work-grid reveal-grid" id="workGrid"></div>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="wrap">
-      <p class="eyebrow">// services.list()</p>
-      <h2>What I build</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="service-index">01</span>
-          <h3>Custom Website Development</h3>
-          <p>WordPress or Shopify builds that are fast, clean, and made to scale with your business — not a stripped-down template.</p>
+      <p class="eyebrow reveal">// services.list()</p>
+      <h2 class="reveal">Websites I build</h2>
+      <p class="section-sub light reveal">Whatever stage your business is at, there's a build that fits.</p>
+      <div class="services-grid reveal-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <p class="eyebrow reveal">// pricing.estimate()</p>
+      <h2 class="reveal">Where to start</h2>
+      <p class="section-sub reveal">8 years and 20+ shipped sites go into every build. These are starting points — every project is scoped around your business on a quick call.</p>
+
+      <div class="pricing-grid reveal-grid">
+        <div class="price-card">
+          <h3>Landing Page</h3>
+          <p class="price">from $750</p>
+          <ul>
+            <li>Single high-converting page</li>
+            <li>Mobile-first build</li>
+            <li>Lead capture form</li>
+            <li>5-day delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost small full">Start here</a>
         </div>
-        <div class="service-card">
-          <span class="service-index">02</span>
-          <h3>Conversion-Focused Design</h3>
-          <p>Layouts, calls-to-action, and user flows designed to move a visitor toward booking, buying, or calling — not just looking.</p>
+
+        <div class="price-card featured">
+          <span class="price-badge">Most requested</span>
+          <h3>Business Website</h3>
+          <p class="price">from $1,800</p>
+          <ul>
+            <li>Up to 6 custom pages</li>
+            <li>Booking / contact integration</li>
+            <li>Basic on-page SEO setup</li>
+            <li>Mobile + cross-browser tested</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary small full">Start here</a>
         </div>
-        <div class="service-card">
-          <span class="service-index">03</span>
-          <h3>Lead-Generating Landing Pages</h3>
-          <p>Purpose-built pages for a single offer or campaign, engineered around one goal: getting the click.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-index">04</span>
-          <h3>Workflow Automation</h3>
-          <p>Simplifying the backend of your site — bookings, forms, and follow-ups — so the business runs without you babysitting it.</p>
+
+        <div class="price-card">
+          <h3>E-commerce / Custom Build</h3>
+          <p class="price">from $3,500</p>
+          <ul>
+            <li>Shopify or fully custom store</li>
+            <li>Product &amp; payment setup</li>
+            <li>Built to scale with your catalog</li>
+            <li>Optional care plan after launch</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost small full">Start here</a>
         </div>
       </div>
     </div>
@@ -123,35 +149,37 @@
   <!-- PROCESS -->
   <section class="process" id="process">
     <div class="wrap">
-      <p class="eyebrow">// process.run()</p>
-      <h2>How a project actually goes</h2>
-      <div class="process-list">
+      <p class="eyebrow reveal">// process.run()</p>
+      <div class="process-heading-row">
+        <h2 class="reveal">How a project actually goes</h2>
+      </div>
+      <div class="process-list reveal-grid">
         <div class="process-step">
           <span class="step-no">01</span>
           <div>
             <h3>Discovery call</h3>
-            <p>We talk about your business, your customers, and what a website actually needs to do for you — not just look like.</p>
+            <p>We talk about your business, your customers, and what a website actually needs to do for you.</p>
           </div>
         </div>
         <div class="process-step">
           <span class="step-no">02</span>
           <div>
             <h3>Design &amp; build</h3>
-            <p>I design and develop in the open — you see real progress, not a black box, with checkpoints along the way.</p>
+            <p>I design and develop in the open — you see real progress, not a black box.</p>
           </div>
         </div>
         <div class="process-step">
           <span class="step-no">03</span>
           <div>
             <h3>Launch</h3>
-            <p>Tested across devices, connected to your domain, and live — with a walkthrough so you're never locked out of your own site.</p>
+            <p>Tested across devices, connected to your domain, and live — with a walkthrough included.</p>
           </div>
         </div>
         <div class="process-step">
           <span class="step-no">04</span>
           <div>
             <h3>Support</h3>
-            <p>Sites need small updates. I stay reachable for tweaks, fixes, and the next phase when you're ready to grow.</p>
+            <p>I stay reachable for tweaks, fixes, and the next phase when you're ready to grow.</p>
           </div>
         </div>
       </div>
@@ -161,28 +189,29 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="wrap about-grid">
-      <div class="about-visual">
-        <div class="about-card">
-          <p class="about-card-label">// currently</p>
-          <p class="about-card-line">Building for clients across <strong>US · Australia · Germany</strong></p>
-        </div>
-        <div class="about-timeline">
-          <p class="eyebrow">// experience.log()</p>
-          <ul>
-            <li><span>2023 – Present</span>Freelance Web &amp; Shopify Developer</li>
-            <li><span>2022 – 2023</span>Technical Project Lead, Neem.pro</li>
-            <li><span>2019 – 2022</span>Senior Web Developer, Crystallite Pakistan</li>
-            <li><span>2018 – 2019</span>WordPress Developer, Just Digital</li>
-          </ul>
-        </div>
-      </div>
-      <div class="about-copy">
+      <div class="about-copy reveal">
         <p class="eyebrow">// about.me</p>
         <h2>Hey, I'm Zubia.</h2>
-        <p>I turned my love for coding into a full-fledged career. Over the years I've helped businesses — from startups to established brands — build high-converting websites that don't just look good, but actually drive results.</p>
-        <p>I call myself a web developer, but honestly I do more than that. Think of me as a problem solver, a conversion strategist, and a workflow optimizer, rolled into one. I don't just build websites — I build growth engines: sites designed to generate leads, streamline workflows, and make businesses run smarter.</p>
-        <p>Based in Pakistan, working with clients across the US, Australia and Germany — I hold a Master's in Project Management from SZABIST and a BS in Computer Engineering from Jinnah University for Women, both in Karachi.</p>
-        <a href="https://www.linkedin.com/in/zubiakayani" target="_blank" rel="noopener" class="btn btn-ghost small">Connect on LinkedIn ↗</a>
+        <p class="about-lead">A developer who treats every build as a growth engine, not just a page that looks nice.</p>
+        <p>8+ years, 20+ live sites, clients across the US, Australia and Germany. Based in Karachi, working with your timezone.</p>
+        <a href="https://www.linkedin.com/in/zubiakayani" target="_blank" rel="noopener" class="btn btn-ghost small">Connect on LinkedIn &#8599;</a>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-card">
+          <p class="about-card-label">// currently</p>
+          <p class="about-card-line">Building for clients across <strong>US &middot; Australia &middot; Germany</strong></p>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-bar"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">zubia@build:~</span></div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> zubia --capabilities</p>
+            <p class="out">&#10003; 20+ live sites shipped, zero downtime handoffs</p>
+            <p class="out">&#10003; WordPress, Shopify, Webflow, Wix, Squarespace</p>
+            <p class="out">&#10003; Booking flows, payment forms, review automation</p>
+            <p class="out">&#10003; Mobile-first, cross-browser, built to load fast</p>
+            <p><span class="prompt">$</span> <span class="cursor">&#9612;</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -190,21 +219,19 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="wrap contact-grid">
-      <div class="contact-copy">
+      <div class="contact-copy reveal">
         <p class="eyebrow">// contact.send()</p>
         <h2>Need a website that works for you 24/7?</h2>
         <p>Drop me a message with a bit about your business — I'll reply with next steps, no obligation.</p>
         <div class="contact-links">
-          <a href="mailto:zubiakayani8@gmail.com">✉ zubiakayani8@gmail.com</a>
-          <a href="https://www.linkedin.com/in/zubiakayani" target="_blank" rel="noopener">↗ linkedin.com/in/zubiakayani</a>
+          <a href="mailto:zubiakayani8@gmail.com">&#9993; zubiakayani8@gmail.com</a>
+          <a href="https://www.linkedin.com/in/zubiakayani" target="_blank" rel="noopener">&#8599; linkedin.com/in/zubiakayani</a>
         </div>
       </div>
-      <form class="contact-form" id="contactForm" action="https://formsubmit.co/zubiakayani8@gmail.com" method="POST">
+      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/zubiakayani8@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Portfolio Contact Form">
-<input type="hidden" name="_template" value="table">
-       
-        
+        <input type="hidden" name="_subject" value="New Portfolio Contact Form">
+        <input type="hidden" name="_template" value="table">
         <label>Name<input type="text" name="name" required placeholder="Your name" /></label>
         <label>Email<input type="email" name="email" required placeholder="you@company.com" /></label>
         <label>Tell me about your project<textarea name="message" rows="4" required placeholder="I run a ... and I need a site that ..."></textarea></label>
@@ -219,8 +246,8 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <span class="brand-mark">&lt;Z/&gt;</span>
-    <p>© <span id="year"></span> Zubia Kayani. Built line by line, not from a template.</p>
-    <a href="#top">Back to top ↑</a>
+    <p>&copy; 2026 Zubia Kayani. All rights reserved.</p>
+    <a href="#top">Back to top &#8593;</a>
   </div>
 </footer>
 
